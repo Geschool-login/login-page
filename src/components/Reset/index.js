@@ -38,11 +38,6 @@ function Reset(props) {
     }
 
     useEffect(() => {
-        console.log("testess");
-
-
-
-
         const doCekToken = () => {
             console.log('cek token');
 
@@ -78,7 +73,6 @@ function Reset(props) {
         }
 
         const doValidationToken = () => {
-            console.log(email);
             email === null ? window.location.href = '/' : doCekToken();
         }
 

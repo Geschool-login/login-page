@@ -167,7 +167,7 @@ function Index(props) {
                                 : ''
                         }
                     </div>
-                    <div className="mb-4">
+                    <div className="mb-5">
                         <label htmlFor="password_repeat">Ulangi password</label>
                         <div className="d-flex input-password">
                             <input error={error.password_repeat} onChange={onChange} type={rePasswordShown ? "text" : "password"} name="password_repeat" id="password_repeat" placeholder="Masukkan ulang password" className="form-control px-3" required />
