@@ -12,9 +12,9 @@ import logo from '../../assets/img/logo/logo.png'; //Logo
 function pageLayout( props ) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "SIP Cemerlang"
-    const slogan = "Pupuklah selalu kepercayaan diri yang ada dalam dirimu. Karena sebenarnya kamu benar-benar mampu dan tidak ada seorangpun yang membatasimu untuk mecari ilmu."
-    const copyright = "2021 SIP Cemerlang - Didukung oleh geschool"
+    const title = "Yogyakarta Blended Learning"
+    const slogan = "Yogyakarta kota pelajar berhati nyaman, membuat para pengais ilmu semangat untuk menggapai kesuksesan. Perjalanan berjuta mil menuju kesuksesan dimulai dengan satu langkah dari kota Yogyakarta."
+    const copyright = "2021 Yogyakarta Blended Learning - Didukung oleh geschool"
 
     return (
         <div>
