@@ -39,8 +39,6 @@ function Reset(props) {
 
     useEffect(() => {
         const doCekToken = () => {
-            console.log('cek token');
-
             let data = { email, token };
 
             fetch("/_api/main/reset", {
@@ -108,16 +106,13 @@ function Reset(props) {
                     }
                     if (result.error) {
                         setError(404);
-                        console.log(error);
                     }
                     setLoading(false)
-                    console.log(error);
                 }
             )
             .catch(error => {
                 setError(true)
                 setLoading(false)
-                console.log(error);
             })
     }
 

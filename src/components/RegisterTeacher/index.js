@@ -13,8 +13,6 @@ function Index(props) {
     const [data, setData] = useState({ type: 2 });
     const [schools, setSchools] = useState([]);
 
-
-
     const [passwordShown, setPasswordShown] = useState(false);
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
@@ -25,6 +23,21 @@ function Index(props) {
         setRePasswordShown(rePasswordShown ? false : true);
     };
 
+    const handleSetChange = (v, e) => {
+        let dataSchool;
+
+        if (v.length !== 0) {
+            dataSchool = v[0].id
+        } else {
+            dataSchool = ''
+        }
+
+        let d = { ...data };
+        d['school'] = dataSchool
+
+        setData(d);
+
+    }
 
     const onChange = (e) => {
         let d = { ...data };
@@ -38,8 +51,6 @@ function Index(props) {
     }
 
     const doRegister = () => {
-
-
         setLoading(true);
         fetch("/_api/main/register", {
             method: 'POST',
@@ -144,7 +155,7 @@ function Index(props) {
                         <Typeahead
                             id="schools"
                             labelKey={(option) => option.name}
-                            onChange={schools.id}
+                            onChange={handleSetChange}
                             options={schools}
                             placeholder="Pilih sekolah"
                         />
