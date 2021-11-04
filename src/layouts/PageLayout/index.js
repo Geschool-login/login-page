@@ -14,7 +14,7 @@ function pageLayout( props ) {
     const deskripsi = "Selamat datang kembali di"
     const title = "Yogyakarta Blended Learning"
     const slogan = "Yogyakarta kota pelajar berhati nyaman, membuat para pengais ilmu semangat untuk menggapai kesuksesan. Perjalanan berjuta mil menuju kesuksesan dimulai dengan satu langkah dari kota Yogyakarta."
-    const copyright = "2021 Yogyakarta Blended Learning - Didukung oleh geschool"
+    const copyright = "2021 Yogyakarta Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>
